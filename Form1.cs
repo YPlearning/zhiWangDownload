@@ -27,8 +27,8 @@ namespace zhiWangDownload
             Regex rgx = new Regex(pattern);
             string result = rgx.Replace(input, replacement);
             textBoxOutput.Text = result;
-
-
+            
+            
             RegistryKey key = Registry.ClassesRoot.OpenSubKey(@"http\shell\open\command\");
             string s = key.GetValue("").ToString();
             textBoxOutput.Text = s;
