@@ -35,14 +35,15 @@ namespace zhiWangDown
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.webBrowserGet = new System.Windows.Forms.WebBrowser();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonGenerate
             // 
-            this.buttonGenerate.Location = new System.Drawing.Point(12, 12);
+            this.buttonGenerate.Location = new System.Drawing.Point(12, 63);
             this.buttonGenerate.Name = "buttonGenerate";
-            this.buttonGenerate.Size = new System.Drawing.Size(130, 180);
+            this.buttonGenerate.Size = new System.Drawing.Size(130, 129);
             this.buttonGenerate.TabIndex = 0;
             this.buttonGenerate.Text = "开始下载";
             this.buttonGenerate.UseVisualStyleBackColor = true;
@@ -93,11 +94,22 @@ namespace zhiWangDown
             this.webBrowserGet.TabIndex = 4;
             this.webBrowserGet.Visible = false;
             // 
+            // buttonClear
+            // 
+            this.buttonClear.Location = new System.Drawing.Point(12, 12);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(130, 35);
+            this.buttonClear.TabIndex = 5;
+            this.buttonClear.Text = "清空内容";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 341);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.webBrowserGet);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxOutput);
@@ -120,6 +132,7 @@ namespace zhiWangDown
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.WebBrowser webBrowserGet;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
